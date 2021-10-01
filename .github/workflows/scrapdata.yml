@@ -1,0 +1,40 @@
+name: scrapping
+
+on:
+   push:
+    branches: [ main ]
+   pull_request:
+     branches: [ main ]
+   schedule:
+     - cron:  '0 0 * * *'
+
+
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Setup Python Environment
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+
+      - name: Install Requirements
+        run: pip install -r requirements.txt
+
+      - name: Execute Python script
+        run: |
+          python scripts/main.py
+
+      - name: setup git config
+        run: |
+          git config --global user.name "GDSC | ASIET"
+          git config --global user.email "gdscasiet@gmail.com"
+          git add -A
+          git commit -m "Update data"
+          git push
