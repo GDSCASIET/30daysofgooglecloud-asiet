@@ -23,7 +23,9 @@ function getData() {
                     <div class="c-list__grid">
                         <div class="c-flag c-place u-bg--transparent">${i}</div>
                         <div class="c-media">
+                        <a href="${member.qlabid}" rel="noopener" target="_blank">
                             <img class="c-avatar c-media__img" src="${member.dp}" />
+                            </a>
                             <div class="c-media__content">
                                 <div class="c-media__title">${member.name}</div>
                                 <a class="c-media__link ">Track 1 - ${member.track1}</a>
