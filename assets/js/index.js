@@ -41,19 +41,6 @@ function getData() {
                         </div>
                     </div>
                 `;
-                if (i === 1) {
-                    newRow.querySelector('.c-place').classList.add('u-text--dark');
-                    newRow.querySelector('.c-place').classList.add('u-bg--yellow');
-                    newRow.querySelector('.c-kudos').classList.add('u-text--yellow');
-                } else if (i === 2) {
-                    newRow.querySelector('.c-place').classList.add('u-text--dark');
-                    newRow.querySelector('.c-place').classList.add('u-bg--teal');
-                    newRow.querySelector('.c-kudos').classList.add('u-text--teal');
-                } else if (i === 3) {
-                    newRow.querySelector('.c-place').classList.add('u-text--dark');
-                    newRow.querySelector('.c-place').classList.add('u-bg--orange');
-                    newRow.querySelector('.c-kudos').classList.add('u-text--orange');
-                }
                 i++;
                 list.appendChild(newRow);
             });
