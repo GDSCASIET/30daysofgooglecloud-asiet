@@ -160,14 +160,23 @@ def data_saving (biglist):
         if x==6 or y==6:
             #print(tempdic['name'])
             tkt+=1
-            if x==6 and y==6:
-                tkb +=1
+        if x==6 and y==6:
+            tkb +=1
 
 
     print("Number of people completed track 1 : ",tk1)
     print("Number of people completed track 2 : ",tk2)
     print("Number of people completed atleast 1 track : ",tkt)
     print("Number of people completed both tracks : ",tkb)
+
+    mile1 = (tkt/75)*100
+    mile2 = (tkb/50)*100
+
+    print("Milestone 1 completed : ",mile1,"%")
+    print("Milestone 2 completed : ",mile2,"%")
+
+
+
     #print("Number of people may complete atleast 1 track  : ",total_lab)
     #print("number of people completed atleast one track ",num)
     #print(res)
