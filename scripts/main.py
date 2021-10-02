@@ -139,7 +139,7 @@ def data_saving (biglist):
     tk1 = 0
     tk2 = 0
     tkt = 0
-    total_lab = 0
+    tkb = 0
     for tempdic in biglist:
         if tempdic['qcomplete_no']!=0:
             smalllist.append(tempdic)
@@ -160,11 +160,14 @@ def data_saving (biglist):
         if x==6 or y==6:
             #print(tempdic['name'])
             tkt+=1
+            if x==6 and y==6:
+                tkb +=1
 
 
     print("Number of people completed track 1 : ",tk1)
     print("Number of people completed track 2 : ",tk2)
     print("Number of people completed atleast 1 track : ",tkt)
+    print("Number of people completed both tracks : ",tkb)
     #print("Number of people may complete atleast 1 track  : ",total_lab)
     #print("number of people completed atleast one track ",num)
     #print(res)
