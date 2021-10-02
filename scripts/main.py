@@ -55,8 +55,7 @@ def data_gathering(link):
     labsnum = tlab.split()
         tempdic['labsattempted'] = 0
     """
-
-
+    """
     profile = soup.findAll('span', attrs = {'class':'ql-subhead-1 l-mts'})
     #print(profile)
     for element in profile:
@@ -68,7 +67,7 @@ def data_gathering(link):
             track1completed.append(skillbadge)
         if skillbadge in track2:
             track2completed.append(skillbadge)
-    """
+
     print(alltracks)
     for skillbadge in alltracks:
         if skillbadge in track1:
@@ -77,6 +76,41 @@ def data_gathering(link):
         if skillbadge in track2:
             track2completed.append(skillbadge)
     """
+    profile = soup.findAll('div', attrs = {'class':'profile-badge'})
+    #print(profile)
+
+    for element in profile:
+        key = element.findAll('span', attrs = {'class':'ql-subhead-1 l-mts'})[0]
+        key2 = key.text.split('\n')[1]
+        value = element.findAll('span', attrs = {'class':'ql-body-2 l-mbs'})[0]
+        value2 = value.text.split('\n')[1]
+        value3 = value2.split('Earned')[1]
+        value4 = value3.split(" ")
+        date = []
+        for i in value4:
+            if i!= '':
+                date.append(i)
+        #print(date)
+
+        if date[0] == 'Sep':
+            if date[1] >= '22':
+                #print(key2)
+                if key2 in track1:
+                    track1completed.append(key2)
+                if key2 in track2:
+                    track2completed.append(key2)
+        elif date[0] == 'Oct':
+            if date[1] <= '27':
+                if key2 in track1:
+                    track1completed.append(key2)
+                if key2 in track2:
+                    track2completed.append(key2)
+
+
+        #print(key2,date)
+    #print(track1completed,track2completed)
+
+
     #print(track1completed)
     #print(track2completed)
     tempdic['qlabid'] = link
