@@ -114,7 +114,7 @@ def data_gathering(link):
     #print(track1completed)
     #print(track2completed)
     tempdic['qlabid'] = link
-    tempdic['id'] = len(biglist)+1
+    #tempdic['id'] = len(biglist)+1
     tempdic['name'] = name
     tempdic['dp'] = dp
     tempdic['track1'] = track1completed
