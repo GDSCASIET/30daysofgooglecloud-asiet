@@ -408,22 +408,6 @@
         "qcomplete_no": 5
     },
     {
-        "qlabid": "https://www.qwiklabs.com/public_profiles/a65343f1-60f5-4b09-9181-14dee6e9a3e7",
-        "name": "Harshit Kumar",
-        "dp": "https://lh3.googleusercontent.com/a/AATXAJwAxKOtiUKefLbCVEqb-h2eMdBikT2CHPe-2H8l=s320-c",
-        "track1": [
-            "Create and Manage Cloud Resources"
-        ],
-        "track2": [
-            "Explore Machine Learning Models with Explainable AI",
-            "Engineer Data in Google Cloud",
-            "Create and Manage Cloud Resources"
-        ],
-        "lentrack1": 1,
-        "lentrack2": 3,
-        "qcomplete_no": 4
-    },
-    {
         "qlabid": "https://www.qwiklabs.com/public_profiles/4bbbe37b-4148-41d0-b6a1-1af698a73626",
         "name": "Krishna Agarwal",
         "dp": "https://lh3.googleusercontent.com/a/AATXAJy8DlqlVHLz0_gxtfJq8EBR7Sz9HlVkjRIyYHIR=s320-c",
@@ -437,6 +421,22 @@
         ],
         "lentrack1": 3,
         "lentrack2": 1,
+        "qcomplete_no": 4
+    },
+    {
+        "qlabid": "https://www.qwiklabs.com/public_profiles/a65343f1-60f5-4b09-9181-14dee6e9a3e7",
+        "name": "Harshit Kumar",
+        "dp": "https://lh3.googleusercontent.com/a/AATXAJwAxKOtiUKefLbCVEqb-h2eMdBikT2CHPe-2H8l=s320-c",
+        "track1": [
+            "Create and Manage Cloud Resources"
+        ],
+        "track2": [
+            "Explore Machine Learning Models with Explainable AI",
+            "Engineer Data in Google Cloud",
+            "Create and Manage Cloud Resources"
+        ],
+        "lentrack1": 1,
+        "lentrack2": 3,
         "qcomplete_no": 4
     },
     {
@@ -768,9 +768,9 @@
         "qcomplete_no": 2
     },
     {
-        "qlabid": "https://google.qwiklabs.com/public_profiles/8dd87fd0-57ad-45da-8cf4-906048f321e9",
-        "name": "Sai Lalitha Anakala",
-        "dp": "https://lh3.googleusercontent.com/a/AATXAJzBgo1Ugxobiuxx9TmuEa9xbX-7djvehIWwETRW=s320-c",
+        "qlabid": "https://www.qwiklabs.com/public_profiles/d972eb27-b32f-4655-bbea-0f28e3c5a662",
+        "name": "Jaison Poulose",
+        "dp": "https://lh3.googleusercontent.com/a-/AOh14Ggxq9RgmIDfIDcyeYebCGlKFH4VRqRZxgsXrFLX=s320-c",
         "track1": [
             "Create and Manage Cloud Resources"
         ],
@@ -782,9 +782,9 @@
         "qcomplete_no": 2
     },
     {
-        "qlabid": "https://www.qwiklabs.com/public_profiles/d972eb27-b32f-4655-bbea-0f28e3c5a662",
-        "name": "Jaison Poulose",
-        "dp": "https://lh3.googleusercontent.com/a-/AOh14Ggxq9RgmIDfIDcyeYebCGlKFH4VRqRZxgsXrFLX=s320-c",
+        "qlabid": "https://google.qwiklabs.com/public_profiles/8dd87fd0-57ad-45da-8cf4-906048f321e9",
+        "name": "Sai Lalitha Anakala",
+        "dp": "https://lh3.googleusercontent.com/a/AATXAJzBgo1Ugxobiuxx9TmuEa9xbX-7djvehIWwETRW=s320-c",
         "track1": [
             "Create and Manage Cloud Resources"
         ],
@@ -827,20 +827,6 @@
         "qlabid": "https://www.qwiklabs.com/public_profiles/63e0d5b2-b358-4ea4-83aa-5ab07f1db978",
         "name": "PRANITH S PRABHU",
         "dp": "https://lh3.googleusercontent.com/a/AATXAJxl-IplYzDGV9JoJ_3WRsnr6pET9MLQ8cYzoYAg=s320-c",
-        "track1": [
-            "Create and Manage Cloud Resources"
-        ],
-        "track2": [
-            "Create and Manage Cloud Resources"
-        ],
-        "lentrack1": 1,
-        "lentrack2": 1,
-        "qcomplete_no": 2
-    },
-    {
-        "qlabid": "https://google.qwiklabs.com/public_profiles/30e79835-2313-44b9-b601-8f0600d1599d",
-        "name": "Raghu Nandan R Shenoy",
-        "dp": "https://lh3.googleusercontent.com/a-/AOh14GihFQM2R2B72XMZI_mBSr71OGIanAUhdc2bkLvfhg=s320-c",
         "track1": [
             "Create and Manage Cloud Resources"
         ],
@@ -897,6 +883,20 @@
         "qlabid": "https://google.qwiklabs.com/public_profiles/b559f3f9-1d4e-4300-a64d-3100bc8eb4d4",
         "name": "Alan Abhilash",
         "dp": "https://lh3.googleusercontent.com/a-/AOh14GitDqpnkQbzpZ-0RVKMf32ifzqhCfLagWCXAkKK=s320-c",
+        "track1": [
+            "Create and Manage Cloud Resources"
+        ],
+        "track2": [
+            "Create and Manage Cloud Resources"
+        ],
+        "lentrack1": 1,
+        "lentrack2": 1,
+        "qcomplete_no": 2
+    },
+    {
+        "qlabid": "https://google.qwiklabs.com/public_profiles/30e79835-2313-44b9-b601-8f0600d1599d",
+        "name": "Raghu Nandan R Shenoy",
+        "dp": "https://lh3.googleusercontent.com/a-/AOh14GihFQM2R2B72XMZI_mBSr71OGIanAUhdc2bkLvfhg=s320-c",
         "track1": [
             "Create and Manage Cloud Resources"
         ],
