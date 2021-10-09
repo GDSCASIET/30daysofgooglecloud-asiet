@@ -160,13 +160,14 @@ def data_gathering(link):
         #print(id)
     tempdic['qcomplete_no'] = len(track1completed) + len(track2completed)
     biglist.append(tempdic)
-
+    """
     if tempdic['qcomplete_no']!=0:
         print(tempdic['name']," completed ",tempdic['qcomplete_no']," skill badges"," date ",tempdic['date'] )
         #print("data saved")
     else:
         #print(tempdic['name']," got ",tempdic['qcomplete_no']," skill badges")
         pass
+    """
 
 
 def data_saving (biglist):
@@ -216,7 +217,7 @@ def data_saving (biglist):
     #print("Number of people may complete atleast 1 track  : ",total_lab)
     #print("number of people completed atleast one track ",num)
     #print(res)
-    print("sorting")
+    #print("sorting")
     res = sorted(smalllist, key = lambda x: (reversor(x['qcomplete_no']),x['date']))
     print("number of people started : ",len(res))
 
