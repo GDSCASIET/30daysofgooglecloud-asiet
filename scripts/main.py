@@ -160,6 +160,7 @@ def data_gathering(link):
         #print(id)
     tempdic['qcomplete_no'] = len(track1completed) + len(track2completed)
     biglist.append(tempdic)
+    """
 
     if tempdic['qcomplete_no']!=0:
         print(tempdic['name']," completed ",tempdic['qcomplete_no']," skill badges"," date ",tempdic['date'] )
@@ -167,6 +168,7 @@ def data_gathering(link):
     else:
         #print(tempdic['name']," got ",tempdic['qcomplete_no']," skill badges")
         pass
+    """
 
 
 def data_saving (biglist):
