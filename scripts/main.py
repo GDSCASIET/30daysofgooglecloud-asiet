@@ -29,6 +29,15 @@ track2 = [
     'Integrate with Machine Learning APIs',
     'Explore Machine Learning Models with Explainable AI'
     ]
+class reversor:
+    def __init__(self, obj):
+        self.obj = obj
+
+    def __eq__(self, other):
+        return other.obj == self.obj
+
+    def __lt__(self, other):
+        return other.obj < self.obj
 
 def data_scraping (url):
     start_thread(url)
@@ -81,6 +90,7 @@ def data_gathering(link):
     """
     profile = soup.findAll('div', attrs = {'class':'profile-badge'})
     # print(profile)
+    date1=0
 
     for element in profile:
         key = element.findAll('span', attrs = {'class':'ql-subhead-1 l-mts'})[0]
@@ -90,30 +100,43 @@ def data_gathering(link):
         value3 = value2.split('Earned')[1]
         value4 = value3.split(" ")
         date = []
+
         for i in value4:
             if i!= '':
                 date.append(i)
         #print(date)
 
+
         if date[0] == 'Sep':
+            if date1<900:
+                date1 = 900
             check = date[1].split(',')[0]
+
             if int(check) >= 22:
+                if date1< 900+int(check):
+                    date1+=int(check)
                 #print(key2,date[1])
                 if key2 in track1:
                     track1completed.append(key2)
                 if key2 in track2:
                     track2completed.append(key2)
         elif date[0] == 'Oct':
+            if date1<1000:
+                date1 = 1000
             #print(date)
             check = date[1].split(',')[0]
             #print(check)
             if int(check) <= 27:
+                if date1< 1000+int(check):
+                    date1+=int(check)
+
                 #print(date)
                 #print(key2,date[1])
                 if key2 in track1:
                     track1completed.append(key2)
                 if key2 in track2:
                     track2completed.append(key2)
+        #print(date1)
 
 
         #print(key2,date)
@@ -130,19 +153,21 @@ def data_gathering(link):
     tempdic['track2'] = track2completed
     tempdic['lentrack1'] = len(track1completed)
     tempdic['lentrack2'] = len(track2completed)
+    tempdic['date'] = date1
+
     #if tempdic['lentrack1'] == 6 or tempdic['lentrack2'] == 6:
     #id+=1
         #print(id)
     tempdic['qcomplete_no'] = len(track1completed) + len(track2completed)
     biglist.append(tempdic)
-    '''
+
     if tempdic['qcomplete_no']!=0:
-        print(tempdic['name']," completed ",tempdic['qcomplete_no']," skill badges")
+        print(tempdic['name']," completed ",tempdic['qcomplete_no']," skill badges"," date ",tempdic['date'] )
         #print("data saved")
     else:
         #print(tempdic['name']," got ",tempdic['qcomplete_no']," skill badges")
         pass
-     '''
+
 
 def data_saving (biglist):
     #num = 0
@@ -191,8 +216,11 @@ def data_saving (biglist):
     #print("Number of people may complete atleast 1 track  : ",total_lab)
     #print("number of people completed atleast one track ",num)
     #print(res)
-    res = sorted(smalllist, key = lambda x: x['qcomplete_no'], reverse=True)
+    print("sorting")
+    res = sorted(smalllist, key = lambda x: (reversor(x['qcomplete_no']),x['date']))
     print("number of people started : ",len(res))
+
+
     with open("my.json","w") as f:
         json.dump(res,f,indent=4)
     f.close()
