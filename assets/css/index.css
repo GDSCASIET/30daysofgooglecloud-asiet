@@ -33,3 +33,58 @@ p span {
     background-position: 100% 50%;
   }
 }
+
+
+@import url(https://fonts.googleapis.com/css?family=Anton);
+
+* {
+  font-smoothing: antialiased;
+}
+
+
+.pmilestone {
+  text-align: center;
+  margin-top: 60px;
+  color: #474747;
+  font: 5em/1em 'Anton';
+  text-transform: uppercase;
+  text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black, 7px 7px 5px rgba(0,0,0,0.5);
+}
+
+.sall {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.s1milestone:nth-child(2):hover {
+  color: #4aacb8;
+  top: 2px;
+  left: 2px;
+  text-shadow: 1px 1px #1b818d, 2px 2px #1b818d, 3px 3px #1b818d, 4px 4px #1b818d, 4px 4px 5px rgba(0,0,0,0.5);
+}
+
+.s2milestone:nth-child(3):hover {
+  color: #49b8ff;
+  top: -8px;
+  left: -8px;
+  text-shadow: 1px 1px #116295, 2px 2px #116295, 3px 3px #116295, 4px 4px #116295, 5px 5px #116295, 6px 6px #116295, 7px 7px #116295, 8px 8px #116295, 9px 9px #116295, 10px 10px #116295, 11px 11px #116295, 12px 12px #116295, 13px 13px #116295, 14px 14px 5px rgba(0,0,0,0.5);
+}
+
+.s3milestone:nth-child(4):hover {
+  color: #cc3fd9;
+  top: 4px;
+  left: 4px;
+  text-shadow: 1px 1px #870d92, 2px 2px #870d92, 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+
+
+.sall:hover {
+  color: #acd335;
+  text-shadow: 1px 1px #749218, 2px 2px #749218, 3px 3px #749218, 4px 4px #749218, 5px 5px #749218, 6px 6px #749218, 7px 7px #749218, 8px 8px #749218, 9px 9px 3px rgba(0,0,0,0.5);
+  top: -2px;
+  left: -2px;
+ transition: all 0.1s ease-in-out;
+}
