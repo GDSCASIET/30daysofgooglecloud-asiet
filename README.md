@@ -1,5 +1,7 @@
 # 30daysleaderboard
 
+#Hacktoberfest - Please don't make changes in readme file. Only improvement in the project will be accepted.
+
 Update - Now if you run this script it will tell you how many students got atleast 1 skill badge, how many completed atleast 1 track etc
 
 
