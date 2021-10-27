@@ -128,7 +128,7 @@ def data_gathering(link):
             #print(date)
             check = date[1].split(',')[0]
             #print(check)
-            if int(check) <= 27:
+            if int(check) <= 29:
                 if date1< 1000+int(check):
                     date1+=int(check)
 
